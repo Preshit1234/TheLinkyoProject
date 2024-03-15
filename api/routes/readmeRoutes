@@ -1,0 +1,10 @@
+Routes are used to define route of particular webpage
+For Ex. 'https://linkyo.io/resgister' denotes route of a Sign Up page.
+
+Async and Await functions are used when there is no actual data from the front end but to access a virtual data using post method using json.
+
+(req, res) or simply request and response can be use in any kind of process where there is input and output.
+
+res.status(numbers) denotes the reponse in a coded number.. For example 200 = saved successfully, 501 = error.
+
+crypto.js is used to encrypt and decrypt a message.
