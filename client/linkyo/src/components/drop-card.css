@@ -1,0 +1,193 @@
+body {
+    background-color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.drop-card {
+    border: 1px solid #30363D;
+    height: 169px;
+    width: 499.98px;
+    padding: 16px;
+    border-radius: 6px;
+
+    display: grid;
+    grid-template-columns: auto 110px;
+    grid-template-rows: auto auto auto;
+
+    background-image: 
+        linear-gradient(
+            135deg, 
+            rgba(27, 27, 27, 1), 
+            rgba(67, 153, 255, 0.2), 
+            rgba(67, 153, 255, 0.3), 
+            rgba(67, 153, 255, 0.2), 
+            rgba(67, 153, 255, 0)
+        );
+}
+
+.grid-item-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.drop-card-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-shrink: 0;
+    font-size: 13px;
+
+}
+
+.drop-card-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #C9D1D9;
+    line-height: 21px;
+}
+
+.drop-card-publisher {
+    font-size: 11px;
+    color: #6E7681;
+    display: flex;
+    justify-content: center;
+    align-content: left;
+    align-items: center;
+    line-height: 18px;
+}
+
+.verification-tick {
+    fill: #6E7681;
+    width: 12px;
+    height: 12px;
+}
+
+.drop-card-tags {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* flex-grow: ; */
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.drop-card-tag {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0px 7px;
+    margin: 2px;
+    border-radius: 42px;
+    font-size: 10px;
+    line-height: 20px;
+    background-color: rgba(88, 88, 88, 0.25);
+    border-color: #0969DA;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.grid-item-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.drop-card-thumbnail {
+    width: 110px;
+    height: 110px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px #010409;
+}
+
+.grid-item-3 {
+    font-size: 13px;
+    color: #A5BEE1;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.grid-item-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    gap: 10px;
+    /* display: inline-flexbox; */
+}
+
+.drop-card-button-fetch-link {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    flex: 0 0 auto;
+    padding: 6px 20px;
+    background-color: #0F6EFF;
+    border: 1px solid rgba(240, 246, 252, 0.10);
+    border-radius: 6px;
+}
+
+.drop-card-button-view-drop {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    flex: 0 0 auto;
+    padding: 6px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #0969DA;
+    border-radius: 6px;
+}
+
+.grid-item-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.drop-card-rating-description {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.drop-card-rating-description-1, .drop-card-rating-description-2  {
+    background: -webkit-linear-gradient(22deg, #58A6FF, #D2AAFF);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.drop-card-rating-number {
+    background: -webkit-linear-gradient(22deg, #FFFFFF, #58A6FF);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+    font-weight: 700;
+    font-size: 24px;
+}

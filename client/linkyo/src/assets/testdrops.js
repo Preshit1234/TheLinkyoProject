@@ -5,7 +5,7 @@ const data = [
         "publisher" : "Sid Kan",
         "is_publisher_verified" : "y",
         "description" : "Instantly generate clear, compelling writing while mentaining your unique voice.",
-        "thumbnail_url" : "",
+        "thumbnail_url" : "images/Framethumbnail-grammarly.png",
         "product_url" : "",
         "score" : "150",
         "tags" : [
@@ -21,7 +21,7 @@ const data = [
         "publisher" : "Prat",
         "is_publisher_verified" : "y",
         "description" : "Kippo is The Dating App for Gamers!",
-        "thumbnail_url" : "",
+        "thumbnail_url" : "images/Framethumbnail-kippo.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -37,7 +37,7 @@ const data = [
         "publisher" : "Alok",
         "is_publisher_verified" : "y",
         "description" : "The world's first MPC wallet with non-custodial card.",
-        "thumbnail_url" : "",
+        "thumbnail_url" : "images/Framethumbnail-coca.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -52,7 +52,7 @@ const data = [
         "publisher" : "Karthik",
         "is_publisher_verified" : "y",
         "description" : "Generative AI platform to create stunning social media ads",
-        "thumbnail_url" : "",
+        "thumbnail_url" : "images/Framethumbnail-zocket.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -68,7 +68,7 @@ const data = [
         "publisher" : "Alok",
         "is_publisher_verified" : "y",
         "description" : "payments app and card for the next generation",
-        "thumbnail_url" : "",
+        "thumbnail_url" : "images/Framethumbnail-zywa.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -84,7 +84,7 @@ const data = [
         "publisher" : "Alok",
         "is_publisher_verified" : "y",
         "description" : "2D platform game for nintendo switch",
-        "thumbnail_url" : "",
+        "thumbnail_url" : "images/Framethumbnail-superMarioWonder.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -94,3 +94,5 @@ const data = [
         ]
     }
 ];
+
+export default data;
