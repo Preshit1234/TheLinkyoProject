@@ -1,5 +1,5 @@
 import './drop-card.css';
-// import {DummyData} from '../assets/testdrops.js';
+// import data from '../assets/testdrops.js';
 
 export default function DropCard() {
     // Function to import all images from a folder
@@ -13,8 +13,6 @@ export default function DropCard() {
     // Import images and svgs from assets folder
     const images = importAll(require.context('../assets/images/', false, /\.(png|jpe?g|svg)$/));
     const svgs= importAll(require.context('../assets/svgs/', false, /\.(png|jpe?g|svg)$/));
-    const dummyData = require('../assets/testdrops.js');
-    console.log(dummyData);
 
     return (
         <div className="drop-card">
