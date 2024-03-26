@@ -7,6 +7,10 @@ import DropCard from './drop-card';
 // console.log("Document Width: " + document.width);
 // console.log("Document Height: " + document.height);
 
+/**
+ * A react component that renders a collection of Drops
+ * @returns {ReactNode} A react element that renders a collection of Drops
+ */
 export default function MultipleDropCards() {
     return (
         <div className="drops-container">

@@ -1,20 +1,42 @@
 import './drop-card.css';
 
+/**
+ * A react component that renders a Drop
+ * @param {Object{drop: object}} props Data is passed through custom attributes called props
+ * @returns {ReactNode} A react element that renders a Drop
+ */
 export default function DropCard(props) {
 
-    // Function to import all images from a folder
-    // Copied from https://shaquillegalimba.medium.com/how-to-import-multiple-images-in-react-1936efeeae7b
+    /**
+     * Function to import all modules from a folder
+     * Copied from https://shaquillegalimba.medium.com/how-to-import-multiple-images-in-react-1936efeeae7b
+     * 
+     * @param {Object} r Imported data of modules from a certain directory
+     * @returns {Object} Filtered data of modules
+     */
     function importAll(r) {
         let images = {};
         r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
         return images;
     }
 
-    // Import images and svgs from assets folder
+
+    /**
+     * Import all images with png, jpg and jpeg extensions from assets/images/ folder
+     * @type {Object}
+     */
     const images = importAll(require.context('../assets/images/', false, /\.(png|jpe?g|svg)$/));
+
+
+    /**
+     * Import all images with svg extensions from assets/svgs/ folder
+     * @type {Object}
+     */
     const svgs= importAll(require.context('../assets/svgs/', false, /\.(png|jpe?g|svg)$/));
 
+
     const drop = props.drop;
+
 
     return (
         <div className="drop-card">
