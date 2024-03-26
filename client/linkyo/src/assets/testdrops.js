@@ -1,11 +1,11 @@
-const data = [
+const drops = [
     {
         "id" : 1,
         "name" : "Grammarly",
         "publisher" : "Sid Kan",
         "is_publisher_verified" : "y",
         "description" : "Instantly generate clear, compelling writing while mentaining your unique voice.",
-        "thumbnail_url" : "images/Framethumbnail-grammarly.png",
+        "thumbnail_url" : "Framethumbnail-grammarly.png",
         "product_url" : "",
         "score" : "150",
         "tags" : [
@@ -21,7 +21,7 @@ const data = [
         "publisher" : "Prat",
         "is_publisher_verified" : "y",
         "description" : "Kippo is The Dating App for Gamers!",
-        "thumbnail_url" : "images/Framethumbnail-kippo.png",
+        "thumbnail_url" : "Framethumbnail-kippo.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -35,9 +35,9 @@ const data = [
         "id" : 3,
         "name" : "CoCA",
         "publisher" : "Alok",
-        "is_publisher_verified" : "y",
+        "is_publisher_verified" : "n",
         "description" : "The world's first MPC wallet with non-custodial card.",
-        "thumbnail_url" : "images/Framethumbnail-coca.png",
+        "thumbnail_url" : "Framethumbnail-coca.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -52,7 +52,7 @@ const data = [
         "publisher" : "Karthik",
         "is_publisher_verified" : "y",
         "description" : "Generative AI platform to create stunning social media ads",
-        "thumbnail_url" : "images/Framethumbnail-zocket.png",
+        "thumbnail_url" : "Framethumbnail-zocket.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -68,7 +68,7 @@ const data = [
         "publisher" : "Alok",
         "is_publisher_verified" : "y",
         "description" : "payments app and card for the next generation",
-        "thumbnail_url" : "images/Framethumbnail-zywa.png",
+        "thumbnail_url" : "Framethumbnail-zywa.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -84,7 +84,7 @@ const data = [
         "publisher" : "Alok",
         "is_publisher_verified" : "y",
         "description" : "2D platform game for nintendo switch",
-        "thumbnail_url" : "images/Framethumbnail-superMarioWonder.png",
+        "thumbnail_url" : "Framethumbnail-superMarioWonder.png",
         "product_url" : "",
         "score" : "130",
         "tags" : [
@@ -95,4 +95,4 @@ const data = [
     }
 ];
 
-export default data;
+export default drops;

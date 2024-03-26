@@ -1,11 +1,5 @@
 body {
     background-color: black;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 .drop-card {
@@ -28,13 +22,16 @@ body {
             rgba(67, 153, 255, 0.2), 
             rgba(67, 153, 255, 0)
         );
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
 }
 
 .grid-item-1 {
     display: flex;
     flex-direction: row;
     flex-wrap: none;
-    /* justify-content: space-between; */
     gap: 20px;
 }
 
@@ -44,7 +41,7 @@ body {
     justify-content: space-around;
     flex-shrink: 0;
     font-size: 13px;
-
+    align-items: flex-start;
 }
 
 .drop-card-name {
@@ -71,12 +68,9 @@ body {
 }
 
 .drop-card-tags {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    /* flex-grow: ; */
     padding-top: 3px;
     padding-bottom: 3px;
+    padding-right: 10px;
 }
 
 .drop-card-tag {
@@ -111,6 +105,7 @@ body {
     color: #A5BEE1;
     font-size: 13px;
     line-height: 21px;
+    padding-right: 10px;
 }
 
 .grid-item-4 {
@@ -119,7 +114,6 @@ body {
     justify-content: left;
     align-content: center;
     gap: 10px;
-    /* display: inline-flexbox; */
 }
 
 .drop-card-button-fetch-link {
