@@ -5,11 +5,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    max-width: 591px;
     gap: 10px;
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
+    width: 100%;
+    max-width: 591px;
+    min-width: 328px;
 }
 
 .signup-google-link {
@@ -49,6 +51,7 @@
     color: #958B8B;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
 }
 
 hr {

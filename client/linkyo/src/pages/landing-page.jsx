@@ -5,7 +5,7 @@ import './css/landing-page.css';
 export default function LandingPage() {
     
     const svgs = importAll(require.context('../assets/svgs/', false, /\.(png|jpe?g|svg)$/));
-    const images = importAll(require.context('../assets/images/', false, /\.(png|jpe?g|svg)$/));
+    const images = importAll(require.context('../assets/images/', false, /\.(png|jpe?g|gif|svg)$/));
 
     return (
         <div className="landing-page-container">
@@ -31,7 +31,7 @@ export default function LandingPage() {
                 </div>
             </div>
             <div className="inline-flex quote-block">
-                <img src={images["placeholder-trendhero.png"]} alt="Trendhero Placeholder" className="quote-img" />
+                <img src={images["placeholder-trendhero.gif"]} alt="Trendhero Placeholder" className="quote-img" />
                 <div className="quote-body-wrap">
                     <p className="quote-body">
                         <span className="quote-body-text-1">60 Million</span> new creators emerged <br />
@@ -78,45 +78,50 @@ export default function LandingPage() {
                 </div>
             </div>
             <Signup />
-            <div className="inline">
-                <p>Learn More in FAQ's</p>
-                <ol>
-                    <li>
-                        <span>How does Linkyo affiliate marketing work?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <div className="faq">
+                <p className="faq-title">Learn More in FAQ's</p>
+                <div className="faq-container">
+                    <div className="faq-question-block">
+                        <span className="faq-number">1.</span> 
+                        <span className="faq-question">How does Linkyo affiliate marketing work?</span>
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
+                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                    </li>
-                    <li>
-                        <span>What types of digital products can I promote?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </div>
+                    <div className="faq-question-block">
+                        <span className="faq-number">2.</span> 
+                        <span className="faq-question">What types of digital products can I promote?</span>
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
+                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                    </li>
-                    <li>
-                        <span>How do I earn commissions?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </div>
+                    <div className="faq-question-block">
+                        <span className="faq-number">3.</span> 
+                        <span className="faq-question">How do I earn commissions?</span>
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
+                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                    </li>
-                    <li>
-                        <span>Is affiliate marketing suitable for me?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </div>
+                    <div className="faq-question-block">
+                        <span className="faq-number">4.</span> 
+                        <span className="faq-question">Is affiliate marketing suitable for me?</span>
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
+                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                    </li>
-                    <li>
-                        <span>How do I track my affiliate earnings?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </div>
+                    <div className="faq-question-block">
+                        <span className="faq-number">5.</span> 
+                        <span className="faq-question">How do I track my affiliate earnings?</span>
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
+                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                    </li>
-                </ol>
+                    </div>
+                </div>
             </div>
             <Signup />
-            <p>
-                <span>Linkyo</span><br />
-                <span>All rights reserved 2024</span>
+            <p className="footer">
+                <span className="footer-linkyo">Linkyo</span><br />
+                <span className="footer-rights">All rights reserved.2024</span>
             </p>
         </div>
     );

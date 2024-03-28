@@ -10,14 +10,14 @@
 }
 
 .landing-page-container {
-    max-width: 1920px;
-    /* min-width: 100%; */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #0D1118;
     gap: 100px;
+    padding: 300px 100px;
 }
 
 .inline {
@@ -39,14 +39,14 @@
 }
 
 .tagline-1-gradient-1 {
-    background-clip: "";
+    background-clip: "initial";
     background: linear-gradient(to right, #0969DA, #09DA8F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .tagline-1-gradient-2 {
-    background-clip: "";
+    background-clip: "initial";
     background: linear-gradient(to right, #0969DA, #BD09DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -70,7 +70,7 @@
 
 .tagline-2-gradient-1 {
     font-weight: 700;
-    background-clip: "";
+    background-clip: "initial";
     background: linear-gradient(to right, #1577D2, #9615D2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -78,7 +78,7 @@
 
 .tagline-2-gradient-2 {
     font-weight: 600;
-    background-clip: "";
+    background-clip: "initial";
     background: linear-gradient(to right, #0F6EFF, #CA2F2F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -132,7 +132,7 @@
 
 .quote-body {
     margin: 0;
-    background-clip: "";
+    background-clip: "initial";
     background: linear-gradient(to right, #D9D9D9, #298CF9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -172,7 +172,7 @@
     font-size: 96px;
     line-height: 150%;
     
-    background-clip: "";
+    background-clip: "initial";
     background: linear-gradient(to right, rgba(21, 119, 210, 100%), rgba(109, 5, 61, 84%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -188,7 +188,7 @@
     font-weight: 800;
     font-size: 32px;
 
-    background-clip: "";
+    background-clip: "initial";
     background: linear-gradient(to right, rgba(10, 124, 238, 100%), rgba(200, 7, 54, 100%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,17 +231,18 @@
 }
 
 .about-3 {
-    text-align: center;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .about-3-1 {
     font-size: 40px;
     font-weight: 300;
+    text-align: center;
 
-    background-clip: "";
-    background: linear-gradient(to right, rgba(15, 110, 255, 100%), rgba(202, 47, 47, 93%));
+    background-clip: "initial";
+    background: linear-gradient(to right, rgba(15, 110, 255, 100%) 40%, rgba(202, 47, 47, 93%) 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -255,18 +256,21 @@
     flex-direction: column;
     justify-content: space-between;
     justify-items: center;
-    gap: 40px;
+    gap: 20px;
     align-self: center;
-    width: 70%;
+    /* width: 1476px; */
 }
 
 .about-3-3 > .card {
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    border: 1px solid black;
+    border: 0.2pt solid #222222;
+    border-radius: 8px;
     padding: 30px 60px;
+
+    background: linear-gradient(to right, #000000, #1B1B1B);
 }
 
 .about-3-3 > .card > .title {
@@ -281,4 +285,67 @@
     font-weight: 200;
     color: #FFFFFF;
     margin: 0;
+}
+
+.faq {
+    /* display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 1000px;
+    flex: 1; */
+    width: 100%;
+}
+
+.faq-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+
+    background-clip: "initial";
+    background: linear-gradient(to right, rgba(15, 110, 255, 100%) 40%, rgba(202, 47, 47, 93%) 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.faq-container {
+    /* max-width: 1000px;
+    width: 100%; */
+    margin-top: 30px;
+    list-style-position: inside;
+    color: white;
+    font-size: 24px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.faq-question-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #606060;
+    padding-top: 31px;
+    padding-bottom: 25px;
+    gap: 10px;
+}
+
+.faq-question {
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-linkyo {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9A9DA3;
+}
+
+.footer-rights {
+    font-weight: 200;
+    font-size: 10px;
+    color: white;
 }
