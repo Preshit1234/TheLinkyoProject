@@ -1,4 +1,4 @@
-import './multiple-drop-cards.css';
+import './css/multiple-drop-cards.css';
 import drops from '../assets/testdrops'; // Mock api data - Initial version
 import DropCard from './drop-card';
 

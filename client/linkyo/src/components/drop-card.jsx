@@ -1,4 +1,5 @@
-import './drop-card.css';
+import './css/drop-card.css';
+import {importAll} from './js/import-data';
 
 /**
  * A react component that renders a Drop
@@ -8,29 +9,13 @@ import './drop-card.css';
 export default function DropCard(props) {
 
     /**
-     * Function to import all modules from a folder
-     * Copied from https://shaquillegalimba.medium.com/how-to-import-multiple-images-in-react-1936efeeae7b
-     * 
-     * @param {Object} r Imported data of modules from a certain directory
-     * @returns {Object} Filtered data of modules
-     */
-    function importAll(r) {
-        let images = {};
-        r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
-        return images;
-    }
-
-
-    /**
-     * Import all images with png, jpg and jpeg extensions from assets/images/ folder
-     * @type {Object}
+     * All images with png, jpg and jpeg extensions from assets/images/ folder
      */
     const images = importAll(require.context('../assets/images/', false, /\.(png|jpe?g|svg)$/));
 
 
     /**
-     * Import all images with svg extensions from assets/svgs/ folder
-     * @type {Object}
+     * All images with svg extensions from assets/svgs/ folder
      */
     const svgs= importAll(require.context('../assets/svgs/', false, /\.(png|jpe?g|svg)$/));
 
@@ -40,8 +25,10 @@ export default function DropCard(props) {
 
     return (
         <div className="drop-card">
+
             {/* For names and tags */}
             <div className="grid-item grid-item-1">
+
                 {/* For names */}
                 <div className="drop-card-names">
                     <div><span className="drop-card-name">{drop.name}</span></div>
@@ -52,7 +39,7 @@ export default function DropCard(props) {
                             {
                                 drop.is_publisher_verified == "y" ?
                                 <img 
-                                    src={svgs['Vector-verification-tick.svg']} 
+                                    src={svgs['verification-tick.svg']} 
                                     alt="Verification Tick" 
                                     className="verification-tick" 
                                 />
@@ -70,6 +57,7 @@ export default function DropCard(props) {
                         : ""
                     }
                 </div>
+
             </div>
 
             {/* For thumbnail */}

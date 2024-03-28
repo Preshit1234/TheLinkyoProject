@@ -1,10 +1,9 @@
-import DropCard from './components/drop-card';
-import MultipleDropCards from './components/multiple-drop-cards';
+import LandingPage from './pages/landing-page';
 
 function App() {
   return (
     <div>
-      <MultipleDropCards />
+      <LandingPage />
     </div>
   );
 }
