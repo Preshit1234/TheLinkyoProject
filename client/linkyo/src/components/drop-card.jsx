@@ -37,7 +37,7 @@ export default function DropCard(props) {
                             <span>By</span> &nbsp;
                             <span>{drop.publisher}</span> &nbsp;
                             {
-                                drop.is_publisher_verified == "y" ?
+                                drop.is_publisher_verified === "y" ?
                                 <img 
                                     src={svgs['verification-tick.svg']} 
                                     alt="Verification Tick" 
