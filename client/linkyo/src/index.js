@@ -3,11 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import LandingPage from './pages/landing-page';
+import FaqAccordion from './components/faq-accordion';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/welcome",
+    element: <h1>Welcome to Linkyo</h1>
+  },
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/accordion",
+    element: <FaqAccordion />
+  }
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

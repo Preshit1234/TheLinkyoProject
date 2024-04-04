@@ -1,3 +1,4 @@
+import FaqAccordion from '../components/faq-accordion.jsx';
 import {importAll} from '../components/js/import-data.js';
 import Signup from '../components/signup.jsx';
 import './css/landing-page.css';
@@ -13,21 +14,23 @@ export default function LandingPage() {
                 Join forces with us and tap into a dynamic network of top<br />
                 <span className="tagline-1-gradient-1">Tech Affiliates</span> & <span className="tagline-1-gradient-2">Digital</span> products.
             </p>
-            <img src={svgs["globe-1.svg"]} alt="Globe" className="inline globe" />
+            <Signup />
             <p className="inline tagline-2">
                 The greatest <span className="tagline-2-gradient-1">Creative</span> boom of our generation is just getting started<br />
                 <span className="tagline-2-gradient-2">Witness the change, the no nonsense way.</span>
             </p>
-            <Signup />
+            <img src={svgs["globe-1.svg"]} alt="Globe" className="inline globe" />
             <div className="inline-flex companies">
                 <p>Trusted by the world's leading organizations ↘</p><br />
-                <div className="companies-2">
-                    <img src={svgs["logo-stripe.svg"]} alt="Stripe Logo" />
-                    <img src={svgs["logo-pinterest.svg"]} alt="Pinterest Logo" />
-                    <img src={svgs["logo-kpmg.svg"]} alt="KPMG Logo" />
-                    <img src={svgs["logo-mercedes-benz.svg"]} alt="Mercedes-Benz Logo" />
-                    <img src={svgs["logo-p-and-g.svg"]} alt="P&G Logo" />
-                    <img src={svgs["logo-telus.svg"]} alt="Telus Logo" />
+                <div style={{display: "flex", width: "100%", "justify-content": "center"}}>
+                    <div className="companies-2">
+                        <img src={svgs["logo-stripe.svg"]} alt="Stripe Logo" />
+                        <img src={svgs["logo-pinterest.svg"]} alt="Pinterest Logo" />
+                        <img src={svgs["logo-kpmg.svg"]} alt="KPMG Logo" />
+                        <img src={svgs["logo-mercedes-benz.svg"]} alt="Mercedes-Benz Logo" />
+                        <img src={svgs["logo-p-and-g.svg"]} alt="P&G Logo" />
+                        <img src={svgs["logo-telus.svg"]} alt="Telus Logo" />
+                    </div>
                 </div>
             </div>
             <div className="inline-flex quote-block">
@@ -80,43 +83,7 @@ export default function LandingPage() {
             <Signup />
             <div className="faq">
                 <p className="faq-title">Learn More in FAQ's</p>
-                <div className="faq-container">
-                    <div className="faq-question-block">
-                        <span className="faq-number">1.</span> 
-                        <span className="faq-question">How does Linkyo affiliate marketing work?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </div>
-                    <div className="faq-question-block">
-                        <span className="faq-number">2.</span> 
-                        <span className="faq-question">What types of digital products can I promote?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </div>
-                    <div className="faq-question-block">
-                        <span className="faq-number">3.</span> 
-                        <span className="faq-question">How do I earn commissions?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </div>
-                    <div className="faq-question-block">
-                        <span className="faq-number">4.</span> 
-                        <span className="faq-question">Is affiliate marketing suitable for me?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </div>
-                    <div className="faq-question-block">
-                        <span className="faq-number">5.</span> 
-                        <span className="faq-question">How do I track my affiliate earnings?</span>
-                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-arrow">
-                            <path d="M1.57544 1L9.28772 7L17 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
+                <FaqAccordion />
             </div>
             <Signup />
             <p className="footer">

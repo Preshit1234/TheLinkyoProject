@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "jsdoc": "^4.0.2"
+    "jsdoc": "^4.0.2",
+    "react-router-dom": "^6.22.3"
   }
 }
