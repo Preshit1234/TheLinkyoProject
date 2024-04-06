@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import LandingPage from './pages/landing-page';
 import FaqAccordion from './components/faq-accordion';
+import { gsap } from 'gsap';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

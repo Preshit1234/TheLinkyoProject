@@ -22,7 +22,7 @@ export default function LandingPage() {
             <img src={svgs["globe-1.svg"]} alt="Globe" className="inline globe" />
             <div className="inline-flex companies">
                 <p>Trusted by the world's leading organizations ↘</p><br />
-                <div style={{display: "flex", width: "100%", "justify-content": "center"}}>
+                <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
                     <div className="companies-2">
                         <img src={svgs["logo-stripe.svg"]} alt="Stripe Logo" />
                         <img src={svgs["logo-pinterest.svg"]} alt="Pinterest Logo" />
