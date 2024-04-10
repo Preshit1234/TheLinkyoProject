@@ -2,33 +2,36 @@ import { useState } from "react";
 import "./css/faq-accordion.css";
 import { gsap } from 'gsap';
 
+/**
+ * FAQ Accordion Data
+ */
 const faqs = [
     {
-        id: 1,
+        id: "1",
         questionNumber: 1,
         question: "How does Linkyo affiliate marketing work?",
         answer: "Affiliate marketing involves promoting products or services and earning a commission for each sale or action generated through your unique affiliate link.",
     },
     {
-        id: 2,
+        id: "2",
         questionNumber: 2,
         question: "What types of digital products can I promote?",
         answer: "Affiliate marketing involves promoting products or services and earning a commission for each sale or action generated through your unique affiliate link.",
     },
     {
-        id: 3,
+        id: "3",
         questionNumber: 3,
         question: "How do I earn commissions?",
         answer: "You earn commissions by driving sales or other desired actions, such as sign-ups or leads, through your affiliate link. The commission structure varies depending on the affiliate program.",
     },
     {
-        id: 4,
+        id: "4",
         questionNumber: 4,
         question: "Is affiliate marketing suitable for me?",
         answer: "Affiliate marketing is suitable for anyone with an online presence, including bloggers, social media influencers, content creators, and website owners.",
     },
     {
-        id: 5,
+        id: "5",
         questionNumber: 5,
         question: "How do I track my affiliate earnings?",
         answer: "Linkyo provide tracking tools and dashboards where you can monitor clicks, conversions, and earnings in real-time.",
@@ -43,17 +46,21 @@ export default function FaqAccordion () {
 
     /**
      * State variable to store and track which accordions are selected to expand.
+     * Stores the id of the accordion which selected to expand.
+     * 
+     * @type {Array<String>}
      */
-    const [multipleSelected, setMultipleSelected] = useState([]);
+    const [multipleSelected, setMultipleSelected ] = useState([]);
 
     /**
-     * Handles accordion click event.
-     * Determines whether the accordion is selected to expand or collapse and take appropriate actions.
-     * Default state is collapsed.
+     * Handles click event of the target accordion.
+     * Determines whether the target accordion is selected to expand or collapse and take appropriate actions.
+     * Default state of all accordions is collapsed.
      * 
      * @param {String} faqId | Unique ID of the accordion.
      */
     const handleClick = (faqId) => {
+        
         let cpyMultipleSelected = [...multipleSelected];
 
         if (cpyMultipleSelected.indexOf(faqId) == -1) {
@@ -71,9 +78,11 @@ export default function FaqAccordion () {
      * @param {String} faqId | Unique ID of the accordion.
      */
     const handleAnimations = (faqId) => {
+
         let cpyMultipleSelected = [...multipleSelected];
 
         if (cpyMultipleSelected.indexOf(faqId) == -1) {
+            // Animations triggered when the accordion is selected to expand.
             gsap.to("#faq-arrow-"+faqId, {
                 rotation: 180,
                 duration: 0.6,
@@ -85,7 +94,9 @@ export default function FaqAccordion () {
                 duration: 0.6,
                 ease: "elastic.out(1.5, 0.5)"
             });
+            // Animations end
         } else {
+            // Animations triggered when the Accordion is selected to collapse.
             gsap.to("#faq-arrow-"+faqId, {
                 rotation: 0,
                 duration: 0.6,
@@ -97,6 +108,7 @@ export default function FaqAccordion () {
                 duration: 0.6,
                 ease: "elastic.out(1.5, 0.5)"
             });
+            // Animations end
         }
     }
 

@@ -1,0 +1,117 @@
+/* Begin */
+
+.header-container {
+    width: 100%;
+    height: 68px;
+    position: relative;
+
+    background-color: #161B22;
+}
+
+.header-inline {
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#linkyo-logo-img {
+    left: 40px; 
+}
+
+#linkyo-logo-text {
+    left: 81px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    
+    background: -webkit-linear-gradient(0deg, #C632C9 45%, #58A6FF 56%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-navigation-links {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #FDF6FC;
+}
+
+#header-homepage-link {
+    left: 40px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+#header-products-link {
+    left: 234px;
+}
+
+#header-categories-link {
+    left: 329px;
+}
+
+#header-about-link {
+    left: 440px;
+}
+
+#header-analytics-link {
+    left: 517px;
+}
+
+#header-searchbar-form {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header-searchbar-input {
+    padding-left: 29px;
+    width: 583px;
+    height: 32px;
+    border: 0px solid transparent;
+    border-radius: 16px;
+    background-color: #363738;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#header-searchbar-input::placeholder {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#header-create-drop-button {
+    right: 121px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 180px;
+    padding: 6px 0px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    border: 1px solid #909090;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg, rgba(9, 105, 218, 100%), rgba(31, 158, 152, 50%), rgba(15, 110, 255, 0%));
+}
+
+#header-notification-button {
+    right: 65px;
+    margin-top: -2px;
+}
+
+#header-user-profile-pic {
+    right: 24px;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}

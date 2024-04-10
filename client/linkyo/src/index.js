@@ -7,6 +7,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import LandingPage from './pages/landing-page';
 import FaqAccordion from './components/faq-accordion';
 import { gsap } from 'gsap';
+import Header from './components/header';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/accordion",
     element: <FaqAccordion />
+  },
+  {
+    path: "/header",
+    element: <Header />
   }
 ]);
 
