@@ -8,6 +8,7 @@ import LandingPage from './pages/landing-page';
 import FaqAccordion from './components/faq-accordion';
 import { gsap } from 'gsap';
 import Header from './components/header';
+import BrowseDrops from './pages/browse-drops';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/header",
     element: <Header />
+  },
+  {
+    path: "/browse/drops",
+    element: <BrowseDrops />
   }
 ]);
 

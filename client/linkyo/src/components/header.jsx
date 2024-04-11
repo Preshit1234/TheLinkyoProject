@@ -3,6 +3,10 @@ import {importAll} from './js/import-data';
 import './css/header.css';
 import {Link} from 'react-router-dom';
 
+/**
+ * A react component that renders the website header
+ * @returns {ReactNode}
+ */
 export default function Header () {
     const svgs= importAll(require.context('../assets/svgs/', false, /\.(png|jpe?g|svg)$/));
     return (
