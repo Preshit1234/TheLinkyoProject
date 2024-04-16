@@ -9,6 +9,7 @@ import FaqAccordion from './components/faq-accordion';
 import { gsap } from 'gsap';
 import Header from './components/header';
 import BrowseDrops from './pages/browse-drops';
+import CreateDrop from './pages/create-drop';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/browse/drops",
     element: <BrowseDrops />
+  },
+  {
+    path: "/create/drop",
+    element: <CreateDrop />
   }
 ]);
 
