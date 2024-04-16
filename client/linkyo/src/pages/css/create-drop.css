@@ -114,7 +114,11 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 150%;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 40%);
+}
+
+#create-drop-form-main-form-display-body-sections .active {
+    color: rgba(255, 255, 255, 100%);
 }
 
 #create-drop-form-main-form-display-body-sections span {

@@ -56,10 +56,10 @@ const CreateDrop = () => {
                             <hr />
                             <div id="create-drop-form-main-form-display-body">
                                 <span id="create-drop-form-main-form-display-body-sections">
-                                    <span>1. About <span><img src={svgs["check-circle-active.svg"]} alt="active indicator" /></span> </span>
-                                    <span>2. About <span><img src={svgs["check-circle-inactive.svg"]} alt="inactive indicator" /></span> </span>
-                                    <span>3. About <span><img src={svgs["check-circle-inactive.svg"]} alt="inactive indicator" /></span> </span>
-                                    <span>4. About <span><img src={svgs["check-circle-inactive.svg"]} alt="inactive indicator" /></span> </span>
+                                    <span className="active">1. About <span><img src={svgs["check-circle-active.svg"]} alt="active indicator" /></span> </span>
+                                    <span className="">2. About <span><img src={svgs["check-circle-inactive.svg"]} alt="inactive indicator" /></span> </span>
+                                    <span className="">3. About <span><img src={svgs["check-circle-inactive.svg"]} alt="inactive indicator" /></span> </span>
+                                    <span className="">4. About <span><img src={svgs["check-circle-inactive.svg"]} alt="inactive indicator" /></span> </span>
                                 </span>
                                 <p id="create-drop-form-main-form-display-body-text">
                                     Step into the spotlight and unveil your ingenious creation to the world!  Whether you've stumbled upon a game-changing gadget or crafted a product with your own hands, it's time to let the universe know. 
