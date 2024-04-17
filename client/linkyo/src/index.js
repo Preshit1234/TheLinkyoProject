@@ -3,11 +3,47 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import LandingPage from './pages/landing-page';
+import FaqAccordion from './components/faq-accordion';
+import { gsap } from 'gsap';
+import Header from './components/header';
+import BrowseDrops from './pages/browse-drops';
+import CreateDrop from './pages/create-drop';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/welcome",
+    element: <h1>Welcome to Linkyo</h1>
+  },
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/accordion",
+    element: <FaqAccordion />
+  },
+  {
+    path: "/header",
+    element: <Header />
+  },
+  {
+    path: "/browse/drops",
+    element: <BrowseDrops />
+  },
+  {
+    path: "/create/drop",
+    element: <CreateDrop />
+  }
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

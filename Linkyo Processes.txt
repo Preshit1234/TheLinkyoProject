@@ -1,0 +1,108 @@
+-----------------------------------------------------------------------------------------------------------------------
+LINKYO PROCESSES
+-----------------------------------------------------------------------------------------------------------------------
+
+1. User SignUp
+
+Required data:  Email, Google Account
+Source:         Google Account, User
+Action on:      Landing Page, Browse Drops Page
+Redirected to:  Success: User Login Page 
+                Failure: Landing Page
+Account level:  0
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2. User Login
+
+Required data:  Email, ?Password, Login-Token/Access-Token, Username
+Source:         Google Account, User
+Action on:      User Login Page
+Redirected to:  Success: Settings Page - Account Section
+                Failure: Landing Page
+Account level:  Success: 1
+                Failure: 0
+Generates:      User ID, Account ID
+
+-----------------------------------------------------------------------------------------------------------------------
+
+3. User Update Account Information
+
+Required:       Account Level 1
+Required data:  Email, ?Password, Google Account Login, Login-Token/Access-Token, Account Username, ?Identity Proof
+                User Name, ?Business Name, ?Official Email, User ID, Account ID, Country, Address, Address Proof
+                ?User Designation
+Source:	        Google Account, User
+Action on:      Settings Page - Account Section
+Redirected to:  Success: Home Page
+                Skip: Drops Browser Page
+Account level:  Success: 2
+                Failure: 1
+
+-----------------------------------------------------------------------------------------------------------------------
+
+4. User Upgrage Account
+
+Required:       User Consent and Initiation, Account Level 2
+Required data:  User ID, Account ID, Login-Token/Access-Token, Username/Email, Password, Official Email,
+                Business Name, User Designation, Google Account
+Source:         User
+Action on:      Settings Page - Account Section
+Redirected to:  Success: Home Page
+                Failure: Settings Page - Account Section
+Rights level:	Success: 3
+                Failure: 2
+Generates:      Affiliate ID
+
+-----------------------------------------------------------------------------------------------------------------------
+
+5. User Upload Drop
+
+Required:       User Consent, Rights Level 3
+Required data:  User ID, Account ID, Login-Token/Access-Token, Password, Drop Name, Drop Type, Drop Tags
+                Drop Description, Thumbnail, ?Product URL, Payment Details, Reward Details, Mode(s) of Operations
+Source:         User, Business
+Action on:      Upload Drop Page
+Reditected to:  Success: Drop Details Page
+                Failure: Upload Drop Page
+Rights level:   Success: 4
+                Failure: 3
+
+-----------------------------------------------------------------------------------------------------------------------
+
+6. User View Drop
+
+Required:       ?Account
+Required data:  ?User ID, ?Account ID, ?Login-Token/Access-Token, Drop Name(s), Drop Tag(s), Drop Thumbnail(s),
+                Drop URL(s), Dropper Account ID(s), Dropper Account Name(s), Drop ID(s), Drop Score(s), Drop Type(s)
+Source:         Linkyo
+Action on:      Browse Drops Page, View Your Drops Page
+
+-----------------------------------------------------------------------------------------------------------------------
+
+7. User Fetch Drop
+ 
+Required:       User Consent, Account Level 3
+Required Data:  User Id, Account ID, Login-Token/Access-Token, Drop ID, Password, Affiliate ID
+Source:         User, Linkyo
+Action on:      Browse Drops Page
+Redirected to:  Browse Drops Page
+Generated:      Fetcher URL
+
+-----------------------------------------------------------------------------------------------------------------------
+
+8. User Tracks Fetches (Need More Development)
+
+Required:       Account Level 3
+Required Data:  User ID, Account ID, Login-Token/Access-Token, Drops, Affiliate ID,
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+9. User Explores API
+
+-----------------------------------------------------------------------------------------------------------------------
+
+10. User Embeds API
+
+-----------------------------------------------------------------------------------------------------------------------

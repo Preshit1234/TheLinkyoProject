@@ -1,0 +1,11 @@
+.drops-container {
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 31px 30px; */
+
+    display: flex;
+    flex-direction: row;
+    gap: 31px 30px;
+    flex-wrap: wrap;
+}
