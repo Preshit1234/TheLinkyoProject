@@ -5,7 +5,10 @@ const UserSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     profilepic: { type: String, default: "" },
-    isAdmin: { type: Boolean, default: false }
+    isAdmin: { type: Boolean, default: false },
+    isDropper: {  type: Boolean, default: false },
+    followers: { type: Array, default:[] },
+    followings: { type: Array, default:[] },
 },
     { timestamps: true },
 );
