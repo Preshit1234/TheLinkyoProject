@@ -5,7 +5,7 @@ const DropSchema = new mongoose.Schema({
     productname: { type: String, required: true, unique: true },
     desc: { type: String, required: true, max: 500 },
     productpic: { type: String, default: "" },
-    like: { type: Array, default: [] }
+    likes: { type: Array, default: [] }
 },
     { timestamps: true },
 );
