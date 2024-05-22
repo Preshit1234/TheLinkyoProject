@@ -1,13 +1,14 @@
 .drop-card {
     border: 1px solid #30363D;
-    height: 169px;
-    width: 499.98px;
+    height: 196px;
+    width: 500px;
     padding: 16px;
     border-radius: 6px;
 
     display: grid;
     grid-template-columns: auto 110px;
     grid-template-rows: auto auto auto;
+    grid-column-gap: 29px;
 
     background-image: 
         linear-gradient(
@@ -29,12 +30,15 @@
     flex-direction: row;
     flex-wrap: none;
     gap: 20px;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 .drop-card-names {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap: 4px;
     flex-shrink: 0;
     font-size: 13px;
     align-items: flex-start;
@@ -66,7 +70,7 @@
 .drop-card-tags {
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
 
 .drop-card-tag {
@@ -101,7 +105,12 @@
     color: #A5BEE1;
     font-size: 13px;
     line-height: 21px;
-    padding-right: 10px;
+    /* padding-right: 10px; */
+}
+
+.grid-item-3 p {
+    padding: 0;
+    margin: 0;
 }
 
 .grid-item-4 {

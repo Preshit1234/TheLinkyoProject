@@ -41,7 +41,7 @@ export default function BrowseDrops () {
             <Header />
             <div id="browse-drops-container">
                 <div id="category-tags-container">
-                    { cpyCategoryTags.map((ct) => (<div className="category-tags" key={ct.index}>{ct}</div>)) }
+                    { cpyCategoryTags.map((ct, index) => (<div className="category-tags" key={index}>{ct}</div>)) }
                 </div>
                 <div id="welcome-message-container">
                     <div id="welcome-textbox-1" className="welcome-textbox">

@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import LandingPage from './pages/landing-page';
 import FaqAccordion from './components/faq-accordion';
-import { gsap } from 'gsap';
+// import { gsap } from 'gsap';
 import Header from './components/header';
 import BrowseDrops from './pages/browse-drops';
 import CreateDrop from './pages/create-drop';
+import LoginPage from './pages/login-page';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/create/drop",
     element: <CreateDrop />
+  },
+  {
+    path: "/login",
+    element: <LoginPage />
   }
 ]);
 
