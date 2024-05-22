@@ -73,7 +73,7 @@ router.get("/:id", async (req,res)=>{
         res.status(200).json(err);
     }
 })
-//GETALL DROP
+//GETALL DROP According to follow
 
 router.get("/timeline/all", async (req,res)=>{
     try{
