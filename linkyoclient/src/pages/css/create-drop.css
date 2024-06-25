@@ -1,0 +1,305 @@
+body {
+    background-color: #010409;
+}
+
+#create-drop-content {
+    padding: 166px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+}
+
+#create-drop-tagline-1 {
+    width: 390px;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+#create-drop-tagline-2 {
+    width: 1042px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+#create-drop-subform-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#create-drop-subform-1-input {
+    width: 699px;
+    height: 48px;
+    padding-left: 38px;
+    background-color: #0D0D0D;
+    border: 1px solid rgba(96, 96, 96, 50%);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#create-drop-subform-1-input::placeholder {
+    color: #3C3E5E;
+}
+
+#create-drop-subform-1-get-started-button {
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #909090;
+    border-radius: 6px;
+    background-image: linear-gradient(110deg, rgba(9, 105, 218, 100%), #105050, #010409);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#create-drop-form-main-display-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 62px;
+}
+
+#create-drop-form-main-form-display {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 1px;
+    background-image: linear-gradient(180deg, rgba(9, 105, 218, 79%), rgba(23, 2, 12, 79%));
+    border-radius: 12px;
+    width: 878px;
+}
+
+#create-drop-form-main-form-display-header {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 32px 30px;
+    background-color: #0D0D0D;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid transparent;
+}
+
+#create-drop-form-main-form-display-header span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+#create-drop-form-main-form-display-body {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    background-color: #0D0D0D;
+    padding: 35px 90px;
+}
+
+#create-drop-form-main-form-display-body-sections {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    align-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 40%);
+}
+
+#create-drop-form-main-form-display-body-sections .active {
+    color: rgba(255, 255, 255, 100%);
+}
+
+#create-drop-form-main-form-display-body-sections span {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 9px;
+}
+
+#create-drop-form-main-form-display-body-text {
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+    width: 699px;
+}
+
+.create-drop-form-subforms {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.create-drop-form-input-fields-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 699px;
+}
+
+.create-drop-form-input-field-labels {
+    font-size: 16px;
+    font-weight: 500;
+    color: #BBD1F6;
+}
+
+.create-drop-form-text-inputs {
+    box-sizing: border-box;
+    width: 699px;
+    height: 48px;
+    padding-left: 38px;
+    background-color: #0D0D0D;
+    border: 1px solid rgba(96, 96, 96, 50%);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.create-drop-form-text-inputs::placeholder {
+    color: #3C3E5E;
+}
+
+.create-drop-form-textarea-inputs {
+    box-sizing: border-box;
+    width: 699px;
+    padding-left: 38px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #0D0D0D;
+    border: 1px solid rgba(96, 96, 96, 50%);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFFFF;
+    resize: none;
+}
+
+.create-drop-form-textarea-inputs::placeholder {
+    color: #3C3E5E;
+}
+
+.create-drop-form-file-input-containers {
+    box-sizing: border-box;
+    width: 699px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #0D0D0D;
+    border: 1px solid rgba(96, 96, 96, 50%);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.create-drop-form-file-inputs {
+    display: none;
+}
+
+.create-drop-form-file-input-containers img {
+    height: 24px;
+    width: 24px;
+}
+
+.create-drop-form-file-input-containers span {
+    font-size: 12px;
+    color: #3C3E5E;
+}
+
+.create-drop-form-navigation-buttons-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.create-drop-form-navigation-next-subform-buttons {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #363636;
+    border-radius: 6px;
+    background-image: linear-gradient(110deg, rgba(9, 105, 218, 100%), #105050, #010409);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#create-drop-form-preview-display-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 1px;
+    background-image: linear-gradient(180deg, rgba(9, 105, 218, 79%), rgba(23, 2, 12, 79%));
+    border-radius: 12px;
+    flex-basis: auto;
+    height: 100%;
+}
+
+#create-drop-form-preview-header {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 32px 30px;
+    background-color: #0D0D0D;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid transparent;
+    justify-content: space-between;
+}
+
+#create-drop-form-preview-header span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+#create-drop-form-submit-button {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 32px;
+    border: 1px solid #363636;
+    border-radius: 6px;
+    background-image: linear-gradient(110deg, rgba(9, 105, 218, 100%), #105050, #010409);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#create-drop-form-preview-body {
+    background-color: #0D0D0D;
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    padding: 289px 51px;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    border-color: transparent;
+}
