@@ -34,7 +34,6 @@ export default function DropCard(props) {
                         token : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmJmNThlNjllMTNlYWIxOGMyMmExZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcxODU0NTcxOCwiZXhwIjoxNzE4OTc3NzE4fQ.-W_BoN9yAhrq6eGnrwoFFsTv5Is3KqnK8ghc8ZRxzIk"
                     }
                 });
-                console.log(res);
                 setDrops(res.data); 
             }catch(err){
                 console.log(err)

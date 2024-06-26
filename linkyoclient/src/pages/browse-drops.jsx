@@ -56,26 +56,6 @@ export default function BrowseDrops () {
     let cpyCategoryTags = [...categoryTags];
     let svgs= importAll(require.context('../assets/svgs/', false, /\.(png|jpe?g|svg)$/));
 
-        
-    const [drops, setDrops] = useState({});
-
-    useEffect(()=>{
-        const getRandomDrops = async ()=>{
-            try{
-                const res = await axios.get("drops/66365cef95fe9aa17af89b07",{
-                    headers:{
-                        token : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmJmNThlNjllMTNlYWIxOGMyMmExZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcxODU0NTcxOCwiZXhwIjoxNzE4OTc3NzE4fQ.-W_BoN9yAhrq6eGnrwoFFsTv5Is3KqnK8ghc8ZRxzIk"
-                    }
-                });
-                console.log(res);
-                setDrops(res.data); 
-            }catch(err){
-                console.log(err)
-            }
-        };
-        getRandomDrops();
-    })
-
     return (
         <div>
             <Header />
