@@ -1,0 +1,140 @@
+/* Begin */
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 100%;
+    max-width: 591px;
+    min-width: 328px;
+}
+
+.login-google-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    box-sizing: border-box;
+
+    color: black;
+    width: 328px;
+    height: 42px;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Gradient Color Borders */
+    background: 
+        linear-gradient(to right, #FFFFFF, #999999), 
+        linear-gradient(to bottom right, #D2A8FF, #920A0A); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    border: 1px solid transparent;
+    border-radius: 9px;
+}
+
+.login-google-link > img {
+    width: 27px;
+    height: 27px;
+}
+
+.login-partition {
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    gap: 1px;
+    color: #958B8B;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+hr {
+    width: 100%;
+    border-color: #606060;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 328px;
+    gap: 24px;
+    align-self: center;
+}
+
+.login-form-input {
+    height: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    color: white;
+
+    text-align: center;
+
+    /* Gradient Color Borders */
+    background: 
+        linear-gradient(to right, #161B22, #161B22), 
+        linear-gradient(to bottom right, #D2A8FF, #920A0A); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    border: 1px solid transparent;
+    border-radius: 9px;
+}
+
+.login-form-input > ::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #958B8B;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.login-form-input::-webkit-outer-spin-button,
+.login-form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.login-form-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#login-form-input-login-code {
+    display: none;
+}
+
+.login-form-submit-button {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+
+    /* Gradient Color Borders */
+    background: 
+        linear-gradient(to right, rgba(9, 105, 218, 100%), #0D1118), 
+        linear-gradient(to bottom right, #30363D, #57606A); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    border: 1px solid transparent;
+    border-radius: 9px;
+}
+
+.login-form-arrow {
+    color: white;
+    width: 10px;
+    height: 5px;
+    rotate: -90deg;
+}

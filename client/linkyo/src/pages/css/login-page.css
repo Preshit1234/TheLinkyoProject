@@ -1,0 +1,77 @@
+/* begin */
+
+body {
+    background-color: #0D1118;
+    color: #FFFFFF;
+}
+
+#login-page-container {
+    margin: 126px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#login-page-heading {
+    color: #E6E6E6;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    width: 976px;
+}
+
+#login-page-heading span {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 36px;
+
+    /* gradient text */
+    background-clip: "initial";
+    background: linear-gradient(to right, #C632C9 56%, #8F6DE4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#login-page-tagline {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #EFEFEF;
+    width: 871px;
+    margin-top: 34px;
+    margin-bottom: 57px;
+}
+
+#login-page-tagline span {
+    font-weight: 700;
+    font-size: inherit;
+    line-height: inherit;
+    color: #FFFFFF;
+}
+
+#login-fine-print {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+#login-page-supporting-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #D4D4D4;
+    width: 394px;
+    margin-top: 106px;
+    margin-bottom: 85px;
+}
+
+#login-page-supporting-text span {
+    font-weight: 600;
+    font-size: inherit;
+    line-height: inherit;
+    color: #0969DA;
+}
