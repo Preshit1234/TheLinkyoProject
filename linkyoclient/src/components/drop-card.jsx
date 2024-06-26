@@ -1,5 +1,7 @@
 import './css/drop-card.css';
 import {importAll} from './js/import-data';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 /**
  * A react component that renders a Drop
@@ -22,6 +24,25 @@ export default function DropCard(props) {
 
     const drop = props.drop;
 
+    const [drops, setDrops] = useState({});
+
+    useEffect(()=>{
+        const getRandomDrops = async ()=>{
+            try{
+                const res = await axios.get("drops/66365cef95fe9aa17af89b07",{
+                    headers:{
+                        token : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmJmNThlNjllMTNlYWIxOGMyMmExZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcxODU0NTcxOCwiZXhwIjoxNzE4OTc3NzE4fQ.-W_BoN9yAhrq6eGnrwoFFsTv5Is3KqnK8ghc8ZRxzIk"
+                    }
+                });
+                console.log(res);
+                setDrops(res.data); 
+            }catch(err){
+                console.log(err)
+            }
+        };
+        getRandomDrops();
+    })
+
 
     return (
         <div className="drop-card">
@@ -31,11 +52,11 @@ export default function DropCard(props) {
 
                 {/* For names */}
                 <div className="drop-card-names">
-                    <div><span className="drop-card-name">{drop.name}</span></div>
+                    <div><span className="drop-card-name">{drop.productname}</span></div>
                     <div>
                         <span className="drop-card-publisher">
                             <span>By</span> &nbsp;
-                            <span>{drop.publisher}</span> &nbsp;
+                            <span>{drop.userId}</span> &nbsp;
                             {
                                 drop.is_publisher_verified === "y" ?
                                 <img 
@@ -67,7 +88,7 @@ export default function DropCard(props) {
 
             {/* For description */}
             <div className="grid-item grid-item-3">
-                <p>{drop.description}</p>
+                <p>{drop.desc}</p>
             </div>
 
             {/* For call to action buttons */}

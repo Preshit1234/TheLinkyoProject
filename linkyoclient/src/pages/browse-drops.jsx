@@ -6,6 +6,8 @@ import Header from '../components/header.jsx';
 import {importAll} from '../components/js/import-data.js';
 import { useEffect } from 'react';
 import axios from 'axios';
+import DropCard from '../components/drop-card';
+import drops from '../assets/testdrops';
 
 // Mock API response data
 const categoryTagsList = [
@@ -35,6 +37,22 @@ export default function BrowseDrops () {
         setCategoryTags(categoryTagsList);
     }
     
+    const testDrop = {
+        "id" : 1,
+        "name" : "Grammarly",
+        "publisher" : "Sid Kan",
+        "is_publisher_verified" : "y",
+        "description" : "Instantly generate clear, compelling writing while mentaining your unique voice.",
+        "thumbnail_url" : "Framethumbnail-grammarly.png",
+        "product_url" : "",
+        "score" : "150",
+        "tags" : [
+            "Writing",
+            "EdTech",
+            "Gen AI",
+            "ML Modeling"
+        ]
+    }; 
     let cpyCategoryTags = [...categoryTags];
     let svgs= importAll(require.context('../assets/svgs/', false, /\.(png|jpe?g|svg)$/));
 
@@ -50,7 +68,7 @@ export default function BrowseDrops () {
                     }
                 });
                 console.log(res);
-                //setDrops(res.data); 
+                setDrops(res.data); 
             }catch(err){
                 console.log(err)
             }
@@ -79,7 +97,9 @@ export default function BrowseDrops () {
                 <div id="drops-container">
                     <div id="drops-type-1" className="drops-types">
                         <p className="drops-type-text">Top products dropped recently</p>
-                        <MultipleDropCards />
+                        {[drops].map((drop) => (
+                            <DropCard drop={drop} key={drop.id}/>
+                        ))}
                     </div>
                     <div id="drops-type-2" className="drops-types">
                         <p className="drops-type-text">Products with high Linkyo Score</p>

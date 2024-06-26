@@ -52,7 +52,7 @@ export default function Header () {
             </form>
 
             {/* Right Hand Side */}
-            <Link to="" className="header-inline" id="header-create-drop-button">Drop</Link>
+            <Link to="/drop/create" className="header-inline" id="header-create-drop-button">Drop</Link>
             <img src={ svgs['notification-icon-active.svg'] } alt="active notification icon" className="header-inline" id="header-notification-button" />
             <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" alt="user profile picture" className="header-inline" id="header-user-profile-pic" />
             
