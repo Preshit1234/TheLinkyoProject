@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: #161B22;
+    background-color: #000000;
 }
 
 .header-inline {
@@ -17,11 +17,11 @@
     top: 50%;
 }
 
-#linkyo-logo-img {
+#app-logo-img {
     left: 40px; 
 }
 
-#linkyo-logo-text {
+#app-logo-text {
     left: 81px;
     font-size: 32px;
     font-weight: 700;
@@ -88,20 +88,35 @@
 }
 
 #header-create-drop-button {
-    right: 121px;
+    right: 64px;
     display: inline-flex;
     align-content: center;
     justify-content: center;
-    width: 180px;
-    padding: 6px 0px;
+    padding: 6px 20px;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 500px;
     line-height: 20px;
-    border: 1px solid #909090;
+    border: 1px solid rgba(240, 246, 252, 10%);
     border-radius: 6px;
-    background-image: linear-gradient(90deg, rgba(9, 105, 218, 100%), rgba(31, 158, 152, 50%), rgba(15, 110, 255, 0%));
+    background-image: linear-gradient(90deg, rgba(9, 105, 218, 100%), rgba(5, 56, 116, 100%));
+}
+
+#header-promote-drop-button {
+    right: 220px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    border: 1px solid #0960DA;
+    border-radius: 6px;
+    /* background-image: linear-gradient(90deg, rgba(9, 105, 218, 100%), rgba(31, 158, 152, 50%), rgba(15, 110, 255, 0%)); */
 }
 
 #header-notification-button {

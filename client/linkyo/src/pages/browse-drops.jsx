@@ -5,6 +5,8 @@ import {useState} from "react";
 import Header from '../components/header.jsx';
 import {importAll} from '../components/js/import-data.js';
 
+const APP_NAME = process.env.REACT_APP_NAME;
+
 // Mock API response data
 const categoryTagsList = [
     "Writing",
@@ -38,14 +40,14 @@ export default function BrowseDrops () {
 
     return (
         <div>
-            <Header />
+            <Header type="" />
             <div id="browse-drops-container">
                 <div id="category-tags-container">
                     { cpyCategoryTags.map((ct, index) => (<div className="category-tags" key={index}>{ct}</div>)) }
                 </div>
                 <div id="welcome-message-container">
                     <div id="welcome-textbox-1" className="welcome-textbox">
-                        <span id="welcome-text-1">Welcome to Linkyo</span>
+                        <span id="welcome-text-1">Welcome to {APP_NAME}</span>
                         <span id="welcome-text-2">, Pratik!</span> &nbsp;
                         <img src={svgs["smiling-ghost-icon.svg"]} alt="smiling ghost icon" id="welcome-text-3" />
                     </div>
@@ -60,7 +62,7 @@ export default function BrowseDrops () {
                         <MultipleDropCards />
                     </div>
                     <div id="drops-type-2" className="drops-types">
-                        <p className="drops-type-text">Products with high Linkyo Score</p>
+                        <p className="drops-type-text">Products with high {APP_NAME} Score</p>
                         <MultipleDropCards />
                     </div>
                 </div>
