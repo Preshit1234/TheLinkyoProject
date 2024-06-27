@@ -8,8 +8,10 @@ import LandingPage from './pages/landing-page';
 import FaqAccordion from './components/faq-accordion';
 // import { gsap } from 'gsap';
 import Header from './components/header';
+import Test from './components/test';
 import BrowseDrops from './pages/browse-drops';
 import CreateDrop from './pages/create-drop';
+import LoginPage from './pages/login-page';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
   {
     path: "/create/drop",
     element: <CreateDrop />
+  },
+  {
+    path: "/login",
+    element: <LoginPage />
+  },
+  {
+    path: "/test",
+    element: <Test />
   }
 ]);
 

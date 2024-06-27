@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./css/faq-accordion.css";
 import { gsap } from 'gsap';
 
+const APP_NAME = process.env.REACT_APP_NAME;
+
 /**
  * FAQ Accordion Data
  */
@@ -9,7 +11,7 @@ const faqs = [
     {
         id: "1",
         questionNumber: 1,
-        question: "How does Linkyo affiliate marketing work?",
+        question: "How does " + APP_NAME + " affiliate marketing work?",
         answer: "Affiliate marketing involves promoting products or services and earning a commission for each sale or action generated through your unique affiliate link.",
     },
     {
@@ -34,7 +36,7 @@ const faqs = [
         id: "5",
         questionNumber: 5,
         question: "How do I track my affiliate earnings?",
-        answer: "Linkyo provide tracking tools and dashboards where you can monitor clicks, conversions, and earnings in real-time.",
+        answer: APP_NAME + " provide tracking tools and dashboards where you can monitor clicks, conversions, and earnings in real-time.",
     }
 ];
 
@@ -63,7 +65,7 @@ export default function FaqAccordion () {
         
         let cpyMultipleSelected = [...multipleSelected];
 
-        if (cpyMultipleSelected.indexOf(faqId) == -1) {
+        if (cpyMultipleSelected.indexOf(faqId) === -1) {
             cpyMultipleSelected.push(faqId);
         } else {
             cpyMultipleSelected.splice(cpyMultipleSelected.indexOf(faqId));
@@ -81,7 +83,7 @@ export default function FaqAccordion () {
 
         let cpyMultipleSelected = [...multipleSelected];
 
-        if (cpyMultipleSelected.indexOf(faqId) == -1) {
+        if (cpyMultipleSelected.indexOf(faqId) === -1) {
             // Animations triggered when the accordion is selected to expand.
             gsap.to("#faq-arrow-"+faqId, {
                 rotation: 180,
