@@ -1,54 +1,52 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import LandingPage from './pages/landing-page';
-import FaqAccordion from './components/faq-accordion';
-// import { gsap } from 'gsap';
-import Header from './components/header';
-import Test from './components/test';
-import BrowseDrops from './pages/browse-drops';
-import CreateDrop from './pages/create-drop';
-import LoginPage from './pages/login-page';
+// import FaqAccordion from './components/faq-accordion';
+// import Header from './components/header';
+// import Test from './components/test';
+// import BrowseDrops from './pages/browse-drops';
+// import CreateDrop from './pages/create-drop';
+// import LoginPage from './pages/login-page';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
-  {
-    path: "/welcome",
-    element: <h1>Welcome to Linkyo</h1>
-  },
+  // {
+  //   path: "/welcome",
+  //   element: <h1>Welcome to Linkyo</h1>
+  // },
   {
     path: "/",
     element: <LandingPage />,
   },
-  {
-    path: "/accordion",
-    element: <FaqAccordion />
-  },
-  {
-    path: "/header",
-    element: <Header />
-  },
-  {
-    path: "/browse/drops",
-    element: <BrowseDrops />
-  },
-  {
-    path: "/create/drop",
-    element: <CreateDrop />
-  },
-  {
-    path: "/login",
-    element: <LoginPage />
-  },
-  {
-    path: "/test",
-    element: <Test />
-  }
+  // {
+  //   path: "/accordion",
+  //   element: <FaqAccordion />
+  // },
+  // {
+  //   path: "/header",
+  //   element: <Header />
+  // },
+  // {
+  //   path: "/browse/drops",
+  //   element: <BrowseDrops />
+  // },
+  // {
+  //   path: "/create/drop",
+  //   element: <CreateDrop />
+  // },
+  // {
+  //   path: "/login",
+  //   element: <LoginPage />
+  // },
+  // {
+  //   path: "/test",
+  //   element: <Test />
+  // }
 ]);
 
 root.render(

@@ -18,7 +18,7 @@ export default function LandingPage() {
                     Join forces with us and tap into a dynamic network of top<br />
                     <span className="tagline-1-gradient-1">Tech Affiliates</span> & <span className="tagline-1-gradient-2">Digital</span> products.
                 </p>
-                <Signup />
+                {/* <Signup /> */}
                 <p className="inline tagline-2">
                     The greatest <span className="tagline-2-gradient-1">Creative</span> boom of our generation is just getting started<br />
                     <span className="tagline-2-gradient-2">Witness the change, the no nonsense way.</span>
@@ -84,12 +84,12 @@ export default function LandingPage() {
                         </div>
                     </div>
                 </div>
-                <Signup />
+                {/* <Signup /> */}
                 <div className="faq">
                     <p className="faq-title">Learn More in FAQ's</p>
                     <FaqAccordion />
                 </div>
-                <Signup />
+                {/* <Signup /> */}
                 <p className="footer">
                     <span className="footer-app">{APP_NAME}</span><br />
                     <span className="footer-rights">All rights reserved.2024</span>
