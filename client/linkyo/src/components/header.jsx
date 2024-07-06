@@ -56,8 +56,8 @@ export default function Header (props) {
                 {/* Center */}
 
                 {/* Right Hand Side */}
-                <Link to="/browse/drops" className="header-inline" id="header-promote-drop-button">Promote Dropped Products</Link>
-                <Link to="" className="header-inline" id="header-create-drop-button">Drop Product</Link>
+                {/* <Link to="/browse/drops" className="header-inline" id="header-promote-drop-button">Promote Dropped Products</Link>
+                <Link to="" className="header-inline" id="header-create-drop-button">Drop Product</Link> */}
                 
             </div>
         );
