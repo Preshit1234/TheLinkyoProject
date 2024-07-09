@@ -79,7 +79,7 @@ export default function BrowseDrops () {
                         <p className="drops-type-text">Top products dropped recently</p>
                         {[drops].map((drop) => (
                             <DropCard drop={drop} key={drop.id}/>
-                        ))}
+                        ))} 
                     </div>
                     <div id="drops-type-2" className="drops-types">
                         <p className="drops-type-text">Products with high Linkyo Score</p>

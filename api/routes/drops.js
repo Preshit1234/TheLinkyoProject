@@ -5,7 +5,7 @@ const verify = require("../verifyToken");
 
 //CREATE A DROP
 
-router.post("/", async (req,res)=>{
+router.post("/dropcreate", async (req,res)=>{
     const newDrop = new Drop(req.body)
     try{
         const savedDrop = await newDrop.save();
@@ -14,6 +14,26 @@ router.post("/", async (req,res)=>{
         res.status(500).json("err")
     }
 });
+
+
+//GET ALL DROPS
+
+router.get("/", async(req,res)=>{
+    const query = req.query.new;
+    let drops;
+    try{ 
+        if(query){
+            drops = await Drop.find().sort({createdAt: -1}).limit(2)
+        }
+        else{
+            drops = await Drop.find();
+        }
+        res.status(200).json(drops);
+    }catch(err){
+        res.status(500).json(err)
+    }
+});
+
 
 //UPDATE A DROP
 
@@ -31,6 +51,7 @@ router.put("/:id", async (req,res)=>{
     }
 });
 
+
 //DELETE A DROP
 
 router.delete("/:id", async (req,res)=>{
@@ -46,6 +67,7 @@ router.delete("/:id", async (req,res)=>{
         res.status(500).json(err);
     }
 });
+
 
 //LIKE A DROP
 
@@ -63,6 +85,8 @@ router.put("/:id/like", async (req,res)=>{
         res.status(500).json(err);
     }
 })
+
+
 //GET A DROP
 
 router.get("/:id", async (req,res)=>{
@@ -73,6 +97,8 @@ router.get("/:id", async (req,res)=>{
         res.status(200).json(err);
     }
 })
+
+
 //GETALL DROP According to follow
 
 router.get("/timeline/all", async (req,res)=>{
